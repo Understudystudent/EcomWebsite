@@ -1,0 +1,143 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    position:fixed;
+    animation: backwards;
+}
+
+.navbar ul {
+    list-style: none;  
+}
+
+.navbar a {
+    text-decoration: none;  
+    padding:1.2rem;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: grey;
+
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    padding: 1rem;
+    
+}
+
+.container {
+    display: grid;
+    position: relative;
+    max-width: 100rem;
+    height: auto;
+    margin-inline: auto;
+    padding-inline:1.5rem;
+    background-color: whitesmoke;
+}
+
+.card_description {
+    height: 100%;
+}
+
+.photo-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+.card {
+    aspect-ratio: 1/1;;
+    position: relative;
+    border-radius: 4px;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+}
+
+/* Animation */
+
+
+.card_container {
+    background-color: whitesmoke; 
+     padding: .5rem;
+     margin: .5rem;
+
+}
+
+.card_img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    align-items: center;
+
+}
+
+.back {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    align-items: center;
+
+}
+
+
+/* Animation */
+
+.image-animation{
+    padding-top: 1rem;
+}
+img[alt="Run"]{
+    width: 5rem;
+    aspect-ratio: 1/1;
+    animation: animateDog 15s infinite;
+    transition: all .0s;
+}
+@keyframes animateDog {
+
+    from {
+       transform: translateX(0px);
+    }
+    to{
+       transform: translateX(100vw) scale(2, 2) rotateX(0deg);
+    }
+
+}
+
+    /* Front and back */
+
+    :is(.front, .back, img[alt="Profile"] ){
+        width: 100%;
+    } 
+    img[alt="Profile"] {
+        aspect-ratio: 1/1;
+    }
+    .front, .back{
+        position: absolute;
+        left: 0;
+        top: 0;
+        backface-visibility: hidden;
+    }
+    .back, button {
+        z-index: -1;
+        
+    }
+    .front{
+        aspect-ratio: 1/1;
+    }
+    .card:hover .front{
+        transform: translateY(-180px);
+        opacity: 0;
+    }
+    button{
+        opacity: 0;
+    }
+
+    .back:hover button{
+        opacity: 10;
+    }
