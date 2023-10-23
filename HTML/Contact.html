@@ -3,22 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="ContactPage">
+<body id="contact-page">
     <nav class="navbar">
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnQcR3c6cIau2ao1yFaWR-sEB9W6OvnN09WQ&usqp=CAU" alt="logo">
+        </div>
         <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Products</a></li>
+            <li><a href="./About.html">About</a></li>
         </ul>
-<section class="Contact">
-    <div class="LeftContact">
-        <h2> Contact Us</h2>
-        <p class="Cp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, sequi totam? Quis tenetur a illo quaerat id ea libero rerum atque, dolor inventore molestias nam! Nemo aliquid eligendi corrupti ipsum?</p>
+    </nav>
+    <section id="contact">
+  
+        <h2 class="section-header">Contact <span>US</span></h2>
+        
+        <div class="contact-wrapper">
+        
+        <!-- Left contact page --> 
+          
+          <form id="contact-form" class="form-horizontal" role="form">
+             
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="name" placeholder="NAME" name="name"  required>
+              </div>
+            </div>
+      
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email"  required>
+              </div>
+            </div>
+      
+            <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+            
+          </form>
+          
+        <!-- Right contact page --> 
+          
+            <div class="direct-contact-container">
+      
+              <ul class="contact-list">
+                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Unknown Location</span></i></li>
+                
+                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="021 555 8989" title="Call">021 555 8989</a></span></i></li>
+                
+                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Email">The Underground@gmail.com</a></span></i></li>
+                
+              </ul>
+      
+              <hr>
+              <hr>
+      
+              <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+      
+            </div>
+          
+        </div>
+        
+      </section> 
+
+      <div class="image-animation">
+        <img src="https://media.tenor.com/tEQQoB_Qc3kAAAAC/tiger-black.gif" alt="Run">
     </div>
-</section>
+        
+        
     
 </body>
 </html>

@@ -6,6 +6,18 @@
     box-sizing: border-box;
 }
 
+span {
+    color: gold;
+    text-decoration: underline;
+}
+body{
+    background-color: #000;
+}
+p, h2{
+    color: whitesmoke;
+  }
+
+
 .navbar ul {
     list-style: none;
     background-color:black ; 
@@ -24,6 +36,9 @@
 
 }
 
+.logo {
+    width: 200px;
+}
 img {
     max-width: 100%;
     display: block;
@@ -38,13 +53,11 @@ img {
     height: auto;
     margin-inline: auto;
     padding-inline:1.5rem;
-    background-color: whiite
-    ;
 }
 
 .card_description {
     height: 100%;
-    color: black;
+    color: whitesmoke;
 }
 
 .photo-grid{
@@ -64,7 +77,6 @@ img {
 
 
 .card_container {
-    background-color: white; 
      padding: .5rem;
      margin: .5rem;
 
@@ -78,15 +90,6 @@ img {
 
 }
 
-.back {
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    align-items: center;
-
-}
-
-
 
 /* Animation */
 
@@ -97,10 +100,10 @@ img {
 img[alt="Run"]{
     width: 10rem;
     aspect-ratio: 1/2;
-    animation: animateDog 5s infinite;
+    animation: animateTiger 5s infinite;
     transition: all -2s;
 }
-@keyframes animateDog {
+@keyframes animateTiger {
 
     from {
        transform: translateX(0px);
@@ -111,43 +114,155 @@ img[alt="Run"]{
 
 }
 
-
-    /* Front and back */
-
-    :is(.front, .back, img[alt="Profile"] ){
-        width: 100%;
-    } 
-    img[alt="Profile"] {
-        aspect-ratio: 1/1;
-    }
-    .front, .back{
-        position: absolute;
-        left: 0;
-        top: 0;
-        backface-visibility: hidden;
-    }
-    .back, button {
-        z-index: -1;
-        
-    }
-    .front{
-        aspect-ratio: 1/1;
-    }
-    .card:hover .front{
-        transform: translateY(-180px);
-        opacity: 0;
-    }
-    button{
-        opacity: 0;
-    }
-
-    .back:hover button{
-        opacity: 10;
-    }
-
-
     /* Contact Page */
 
-    .Contact {
-        background-color: black;
-    }
+    #contact-page{
+        background-color: #000;
+        padding-bottom: 100px;
+      }
+      
+      #contact {
+        width: 100%;
+        height: auto;
+      }
+      
+      .contact-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 20px;
+        position: relative;
+        max-width: 840px;
+      }
+      .section-header {
+        text-align: center;
+        margin: 0 auto;
+        padding: 40px 0;
+        font: 300 60px 'Oswald', sans-serif;
+        color: whitesmoke;
+        letter-spacing: 6px;
+      }
+      
+      
+      /* Left contact page */
+      .form-horizontal {
+        max-width: 400px;
+      }
+      
+      .form-control, 
+      textarea {
+        max-width: 400px;
+        color: whitesmoke;
+        letter-spacing: 2px;
+      }
+      
+      /* Begin Right Contact Page */
+      .direct-contact-container {
+        max-width: 400px;
+      }
+      
+      /* Location, Phone, Email Section */
+      .contact-list {
+        list-style-type: none;
+        margin-left: -30px;
+        padding-right: 20px;
+      }
+      
+      .list-item {
+        line-height: 4;
+        color:grey;
+      }
+      
+      .contact-text {
+        font: 500 20px 'Lato', sans-serif;
+        letter-spacing: 1.9px;
+        color: grey;
+      }
+      
+      .place {
+        margin-left: 56px;
+      }
+      
+      .phone {
+        margin-left: 55px;
+      }
+      
+      .gmail {
+        margin-left: 55px;
+      }
+      .contact-text a:hover {
+        color: whitesmoke;
+        text-decoration: none;
+      }
+      
+      
+      .contact-text a {
+          text-decoration: none;
+        color: grey;
+      }
+
+      
+
+      
+  
+      
+      .copyright {
+        padding-top: 10px;
+        font: 200 14px 'Oswald', sans-serif;
+        color: #555;
+        letter-spacing: 1px;
+        text-align: center;
+      }
+      
+      hr {
+        border-color: rgba(255,255,255,.6);
+      }
+
+/* about page */
+
+      .About{
+        width: 100%;
+        padding: 75px 0px;
+      }
+      .About img {
+        height: auto;
+        width: 500px;
+      }
+
+      .Aboutext {
+        width: 500px;
+      }
+
+      .Aboutmain{
+        width: 1000px;
+        max-width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+.Aboutext{
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+
+
+.Aboutbutton {
+    background: whitesmoke;
+    color: #000;
+    border: 3px solid transparent red;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+
+      
+    
+       
+        
+       
