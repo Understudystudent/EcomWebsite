@@ -6,6 +6,18 @@
     box-sizing: border-box;
 }
 
+span {
+    color: gold;
+    text-decoration: underline;
+}
+body{
+    background-color: #000;
+}
+p, h2{
+    color: whitesmoke;
+  }
+
+
 .navbar ul {
     list-style: none;
     background-color:black ; 
@@ -24,13 +36,9 @@
 
 }
 
-body{
-    background-color: #000;
+.logo {
+    width: 200px;
 }
-p{
-    color: whitesmoke;
-  }
-
 img {
     max-width: 100%;
     display: block;
@@ -45,13 +53,11 @@ img {
     height: auto;
     margin-inline: auto;
     padding-inline:1.5rem;
-    background-color: whiite
-    ;
 }
 
 .card_description {
     height: 100%;
-    color: black;
+    color: whitesmoke;
 }
 
 .photo-grid{
@@ -71,7 +77,6 @@ img {
 
 
 .card_container {
-    background-color: white; 
      padding: .5rem;
      margin: .5rem;
 
@@ -85,15 +90,6 @@ img {
 
 }
 
-.back {
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    align-items: center;
-
-}
-
-
 
 /* Animation */
 
@@ -104,10 +100,10 @@ img {
 img[alt="Run"]{
     width: 10rem;
     aspect-ratio: 1/2;
-    animation: animateDog 5s infinite;
+    animation: animateTiger 5s infinite;
     transition: all -2s;
 }
-@keyframes animateDog {
+@keyframes animateTiger {
 
     from {
        transform: translateX(0px);
@@ -117,41 +113,6 @@ img[alt="Run"]{
     }
 
 }
-
-
-    /* Front and back */
-
-    :is(.front, .back, img[alt="Profile"] ){
-        width: 100%;
-    } 
-    img[alt="Profile"] {
-        aspect-ratio: 1/1;
-    }
-    .front, .back{
-        position: absolute;
-        left: 0;
-        top: 0;
-        backface-visibility: hidden;
-    }
-    .back, button {
-        z-index: -1;
-        
-    }
-    .front{
-        aspect-ratio: 1/1;
-    }
-    .card:hover .front{
-        transform: translateY(-180px);
-        opacity: 0;
-    }
-    button{
-        opacity: 0;
-    }
-
-    .back:hover button{
-        opacity: 10;
-    }
-
 
     /* Contact Page */
 
@@ -273,7 +234,7 @@ img[alt="Run"]{
         width: 500px;
       }
 
-      main{
+      .Aboutmain{
         width: 1000px;
         max-width: 90%;
         margin: auto;
@@ -282,7 +243,22 @@ img[alt="Run"]{
         justify-content: space-between;
       }
 
-     
+.Aboutext{
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+
+
+.Aboutbutton {
+    background: whitesmoke;
+    color: #000;
+    border: 3px solid transparent red;
+    font-weight: bold;
+    border-radius: 3px;
+}
 
 
       
